@@ -29,7 +29,6 @@ function TextAnnotate(props: Iprops) {
     useEffect(() => {
         const { width } = getContainerInfo()
         const numbers = fontSize.match(/\d+/g)
-        console.log(numbers, '====')
     }, [text])
 
     return (
