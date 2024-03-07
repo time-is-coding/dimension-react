@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body,
-dix,
+div,
 p,
 h1,
 h2,
@@ -14,8 +14,7 @@ header,
 main,
 nav,
 section,
-footer,
-sider {
+footer {
   margin: 0;
   padding: 0;
 }
