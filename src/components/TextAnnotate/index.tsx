@@ -27,8 +27,13 @@ function TextAnnotate(props: Iprops) {
     const { text = '', fontSize = '14px', entities = [], relations = [] } = props
 
     useEffect(() => {
-        const { width } = getContainerInfo()
-        const numbers = fontSize.match(/\d+/g)
+        if (text) {
+            const { width } = getContainerInfo()
+            const textSize = fontSize.match(/\d+/g)
+            const textWidth = textSize && Number(textSize[0])
+            // 每行最多可以放多少字
+            // const fontNumer = width / textWidth
+        }
     }, [text])
 
     return (

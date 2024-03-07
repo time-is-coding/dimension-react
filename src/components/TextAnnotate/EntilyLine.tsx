@@ -8,9 +8,6 @@ interface Iprops {
 
 function EntilyLine(props: Iprops) {
     const { entities } = props
-    useEffect(() => {
-        const a = getContainerInfo()
-    }, [])
     return (
         <>
             {entities?.map((item) => (
