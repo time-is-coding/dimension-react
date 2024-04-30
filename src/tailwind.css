@@ -15,6 +15,15 @@ main,
 nav,
 section,
 footer {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: #ccc;
 }
